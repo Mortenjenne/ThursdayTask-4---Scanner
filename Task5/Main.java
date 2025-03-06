@@ -13,26 +13,26 @@ class Main{
 		actions.add("4) End game");
 
 		//4.g Still in the main method, instantiate theGameMenu class with the actions list as an argument to the constructor.
-		GameMenu gameMenu = new GameMenu(actions);
+		GameMenu menu = new GameMenu(actions);
 
         //4.i From the main method in Main test the displayMenu() method by calling it on the GameMenu instance created in step 4.g.
 		//gameMenu.displayMenu();
 		
 
 		//5.d In the main method of the Main class, call the getAction() saving the return value n a variable.
-		String userChoice = gameMenu.getAction();
+		String userChoice = menu.getAction();
 
 
 		//5.g In step 5.d you created a variable called userChoice with the type String. 
 		int userInput = Integer.parseInt(userChoice);
 
 		//Convert the value to an int before using it as an argument in a call to the doAction() method.
-		doAction(userInput, gameMenu);
+		doAction(userInput, menu);
 
 		}//main
 		
 		//5.e Create a new method in the Main class for printing the message that corresponds to the action the user has chosen.
-		public static void doAction(int action, GameMenu gameMenu){
+		public static void doAction(int action, GameMenu menu){
 
 			//5.f In the body of the doAction() method, write a switch-case with a case for each of the 4 options added in step
 			switch(action) {
@@ -55,10 +55,10 @@ class Main{
 			default:
 				System.out.println("Invalid choice. Please try again");
 
-				String newChoice = gameMenu.getAction(); //Call getAction() again
+				String newChoice = menu.getAction(); //Call getAction() again
 				int newUserInput = Integer.parseInt(newChoice);
 
-				doAction(newUserInput, gameMenu); //Retry with new choice
+				doAction(newUserInput, menu); //Retry with new choice
 				break;
 
 			}

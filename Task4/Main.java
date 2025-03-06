@@ -13,10 +13,10 @@ class Main{
 		actions.add("4) End game");
 
 		//4.g Still in the main method, instantiate theGameMenu class with the actions list as an argument to the constructor.
-		GameMenu gameMenu = new GameMenu(actions);
+		GameMenu menu = new GameMenu(actions);
 
         //4.i From the main method in Main test the displayMenu() method by calling it on the GameMenu instance created in step 4.g.
-		gameMenu.displayMenu();
+		menu.displayMenu();
 		
 
 

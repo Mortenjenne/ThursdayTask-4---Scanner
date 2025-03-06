@@ -5,7 +5,7 @@ Dette repository indeholder opgaver, der bruger `Scanner` i Java til at håndter
 ## Indhold
 
 - **Task 1: Teams**  
-  Brug af `Scanner` til at registrere teams.  
+  Brug af `Klasse` til at registrere teams.  
 
 - **Task 2: Beregn år til pension**  
   Bruger indtaster sin alder, og programmet beregner år til pension.  

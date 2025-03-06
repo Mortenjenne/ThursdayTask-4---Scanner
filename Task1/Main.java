@@ -25,7 +25,7 @@ class Main {
 		team2.addPlayers("Lamine Yamal", "Robert Lewandowski", "Raphina", "Pedri", "Ronald Araujo", "Frenkie de Jong", "Marc-Andre ter Stegen", "Andreas Christensen", "Inigo Martinez", "Jules Kounde", "Dani Olmo");
 
 		//1.l Call the method addPlayer() and give it a suitable parameter.
-		team3.addPlayer("Antonio Griezmann");
+		team3.addPlayer("Antoine Griezmann");
 
 		//1.k From the main method, print them using their toString() method.
 		System.out.println(team1);
